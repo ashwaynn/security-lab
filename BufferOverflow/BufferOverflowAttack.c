@@ -9,17 +9,14 @@ int main(void) {
     printf("\n Enter the password : \n");
     gets(buff);
 
-    if(strcmp(buff, "mypass")) {
-        printf ("\n Wrong Password \n");
-    }
-    else {
-        printf ("\n Correct Password \n");
+    if(strcmp(buff, "mypass") == 0) {
         pass = 1;
     }
 
     if(pass) {
-       /* Now Give root or admin rights to user*/
-        printf ("\n Root privileges given to the user \n");
+        printf ("\nCorrect Password. Access Granted\n");
+    } else {
+        printf ("\nWrong Password. Access Denied\n");
     }
 
     return 0;
