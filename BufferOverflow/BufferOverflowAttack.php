@@ -1,12 +1,8 @@
 <?php
 
-    if( isset($_POST['submit']) )
-    {
+    if( isset($_POST['submit']) ) {
         $text = $_POST['text'];
-
         $query = "./a.out ".$text ;
-
-
         $queryReturnValue = system($query,$retval);
         echo "<br>";
         echo $retval; 

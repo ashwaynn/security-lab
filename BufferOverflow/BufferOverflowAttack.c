@@ -1,27 +1,23 @@
 #include <stdio.h>
 #include <string.h>
-#include<stdlib.h>
+#include <stdlib.h>
 
-int main(void)
-{
+int main(void) {
     char buff[15];
     int pass = 0;
 
     printf("\n Enter the password : \n");
     gets(buff);
 
-    if(strcmp(buff, "sukin"))
-    {
+    if(strcmp(buff, "mypass")) {
         printf ("\n Wrong Password \n");
     }
-    else
-    {
+    else {
         printf ("\n Correct Password \n");
         pass = 1;
     }
 
-    if(pass)
-    {
+    if(pass) {
        /* Now Give root or admin rights to user*/
         printf ("\n Root privileges given to the user \n");
     }
