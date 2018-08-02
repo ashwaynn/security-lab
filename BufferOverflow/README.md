@@ -3,7 +3,14 @@
 Get to know about buffer overflow in this [blog post]().
 
 ### Demo
-Compile and run the source file, when prompted for password enter `mypass`.
+Compile and run the source file
+```
+gcc BufferOverflowAttack.c
+```
+
+*Modern compilers restrict buffer overflow attack. Google on how to compile without protection for your compiler and architecture.*
+
+when prompted for password enter `mypass`.
 Output will be 
 ```
 Correct Password. Access Granted
@@ -20,5 +27,3 @@ Output will be
 ```
 Correct Password. Access Granted
 ```
-
-*Modern compilers restrict buffer overflow attack. Google on how to compile without protection for your compiler and architecture.*
